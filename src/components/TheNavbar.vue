@@ -13,6 +13,7 @@ const links = [
   { to: '/', key: 'nav.home' },
   { to: '/proyectos', key: 'nav.projects' },
   { to: '/servicios', key: 'nav.services' },
+  { to: '/personalizador', key: 'nav.customize' },
   { to: '/estudio', key: 'nav.studio' },
 ]
 

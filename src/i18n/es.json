@@ -4,8 +4,56 @@
     "projects": "Proyectos",
     "services": "Servicios",
     "studio": "Estudio",
+    "customize": "Personaliza",
     "contact": "Contacto",
     "cta": "Hablemos"
+  },
+  "configurator": {
+    "title": "Diseña tu cocina",
+    "subtitle": "Explora distribuciones, materiales e iluminación en tiempo real. Gira la escena y crea la cocina que imaginas; nosotros la construimos.",
+    "hint": "Arrastra para girar · Pellizca o usa la rueda para acercar",
+    "layout": "Distribución",
+    "layouts": {
+      "linear": "Lineal",
+      "l": "En L",
+      "u": "En U",
+      "island": "Con isla"
+    },
+    "cabinets": "Gabinetes",
+    "cabinetColors": {
+      "cream": "Crema",
+      "taupe": "Taupe",
+      "sage": "Verde salvia",
+      "navy": "Azul noche",
+      "terracotta": "Terracota",
+      "graphite": "Grafito"
+    },
+    "finish": "Acabado",
+    "finishes": { "matte": "Mate", "gloss": "Lacado" },
+    "countertop": "Encimera",
+    "countertops": {
+      "marble": "Mármol claro",
+      "granite": "Granito oscuro",
+      "walnut": "Nogal",
+      "concrete": "Concreto"
+    },
+    "floor": "Piso",
+    "floors": {
+      "lightwood": "Madera clara",
+      "walnut": "Nogal",
+      "concrete": "Concreto"
+    },
+    "lighting": "Iluminación",
+    "temperature": "Temperatura de luz",
+    "warm": "Cálida",
+    "cool": "Fría",
+    "intensity": "Intensidad",
+    "night": "Modo noche",
+    "led": "Luz bajo gabinetes",
+    "reset": "Reiniciar",
+    "quote": "Solicitar cotización",
+    "quoteIntro": "Hola, me interesa cotizar una cocina personalizada con esta configuración:",
+    "webglFallback": "Tu navegador no soporta 3D interactivo. Escríbenos y te mostramos tu cocina en una videollamada."
   },
   "hero": {
     "kicker": "Estudio de Arquitectura & Diseño",

@@ -4,8 +4,56 @@
     "projects": "Projects",
     "services": "Services",
     "studio": "Studio",
+    "customize": "Customize",
     "contact": "Contact",
     "cta": "Let's talk"
+  },
+  "configurator": {
+    "title": "Design your kitchen",
+    "subtitle": "Explore layouts, materials and lighting in real time. Rotate the scene and create the kitchen you imagine; we build it.",
+    "hint": "Drag to rotate · Pinch or scroll to zoom",
+    "layout": "Layout",
+    "layouts": {
+      "linear": "Linear",
+      "l": "L-shaped",
+      "u": "U-shaped",
+      "island": "With island"
+    },
+    "cabinets": "Cabinets",
+    "cabinetColors": {
+      "cream": "Cream",
+      "taupe": "Taupe",
+      "sage": "Sage green",
+      "navy": "Night blue",
+      "terracotta": "Terracotta",
+      "graphite": "Graphite"
+    },
+    "finish": "Finish",
+    "finishes": { "matte": "Matte", "gloss": "Gloss" },
+    "countertop": "Countertop",
+    "countertops": {
+      "marble": "Light marble",
+      "granite": "Dark granite",
+      "walnut": "Walnut",
+      "concrete": "Concrete"
+    },
+    "floor": "Floor",
+    "floors": {
+      "lightwood": "Light wood",
+      "walnut": "Walnut",
+      "concrete": "Concrete"
+    },
+    "lighting": "Lighting",
+    "temperature": "Light temperature",
+    "warm": "Warm",
+    "cool": "Cool",
+    "intensity": "Intensity",
+    "night": "Night mode",
+    "led": "Under-cabinet light",
+    "reset": "Reset",
+    "quote": "Request a quote",
+    "quoteIntro": "Hi, I'd like a quote for a custom kitchen with this configuration:",
+    "webglFallback": "Your browser doesn't support interactive 3D. Write to us and we'll show you your kitchen on a video call."
   },
   "hero": {
     "kicker": "Architecture & Design Studio",

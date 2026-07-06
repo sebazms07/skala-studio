@@ -1,14 +1,24 @@
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 import { motion, AnimatePresence } from 'motion-v'
 import { useReveal } from '../composables/useReveal'
 
 const { t, tm, rt } = useI18n()
+const route = useRoute()
 const root = ref(null)
 useReveal(root)
 
 const form = reactive({ name: '', email: '', type: '', message: '' })
+
+onMounted(() => {
+  // Prellenado desde el configurador de cocina (/personalizador)
+  if (typeof route.query.config === 'string' && route.query.config) {
+    form.message = `${t('configurator.quoteIntro')}\n\n${route.query.config}`
+    form.type = rt(tm('contact.form.types')[2]) // Mobiliario a medida
+  }
+})
 const errors = reactive({ name: '', email: '', message: '' })
 const status = ref('idle') // idle | sending | success
 

@@ -10,6 +10,11 @@ const routes = [
     props: true,
   },
   { path: '/servicios', name: 'services', component: () => import('../views/ServicesView.vue') },
+  {
+    path: '/personalizador',
+    name: 'configurator',
+    component: () => import('../views/KitchenConfiguratorView.vue'),
+  },
   { path: '/estudio', name: 'studio', component: () => import('../views/StudioView.vue') },
   { path: '/contacto', name: 'contact', component: () => import('../views/ContactView.vue') },
   { path: '/:pathMatch(.*)*', redirect: '/' },
