@@ -3,6 +3,6 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/skala-studio/',
+  base: process.env.NODE_ENV === 'production' ? '/skala-studio/' : '/',
   plugins: [vue()],
 })
