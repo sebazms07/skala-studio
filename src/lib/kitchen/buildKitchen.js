@@ -45,25 +45,30 @@ export function buildKitchen(layout, m) {
   }
 
   /* ---- Módulos (en coordenadas locales del run: X a lo largo,
-          z=0 contra la pared, frente hacia +Z) ---- */
+          z=0 contra la pared, frente hacia +Z).
+          drop: desplaza la encimera unos mm hacia abajo para evitar
+          z-fighting donde dos encimeras se cruzan en una esquina. ---- */
 
-  function run(len, { sinkAt = null, stoveAt = null, uppers = [], backsplash = true } = {}) {
+  function run(
+    len,
+    { sinkAt = null, stoveAt = null, uppers = [], backsplash = true, drop = 0 } = {}
+  ) {
     const rg = new THREE.Group()
 
     box(len - 0.06, KICK_H, D - 0.08, m.kick, 0, KICK_H / 2, D / 2 - 0.02, { parent: rg })
     box(len, BODY_H, D, m.cabinet, 0, KICK_H + BODY_H / 2, D / 2, { parent: rg })
-    box(len + 0.05, COUNTER_H, D + 0.06, m.stone, 0, TOP_Y + COUNTER_H / 2, D / 2 + 0.015, {
+    box(len + 0.05, COUNTER_H, D + 0.06, m.stone, 0, TOP_Y + COUNTER_H / 2 - drop, D / 2 + 0.015, {
       parent: rg,
     })
     if (backsplash) {
       box(len, 0.55, 0.025, m.stone, 0, TOP_Y + COUNTER_H + 0.275, 0.02, { parent: rg })
     }
 
-    /* tiradores de puertas */
+    /* tiradores de puertas — dorado cepillado */
     const doors = Math.max(2, Math.round(len / 0.5))
     for (let i = 0; i < doors; i++) {
       const x = -len / 2 + (len / doors) * (i + 0.5)
-      box(0.16, 0.018, 0.018, m.metal, x, TOP_Y - 0.09, D + 0.012, {
+      box(0.16, 0.018, 0.018, m.brass, x, TOP_Y - 0.09, D + 0.012, {
         parent: rg,
         shadow: false,
       })
@@ -77,7 +82,7 @@ export function buildKitchen(layout, m) {
       const nd = Math.max(1, Math.round(sl / 0.5))
       for (let i = 0; i < nd; i++) {
         const x = c - sl / 2 + (sl / nd) * (i + 0.5)
-        box(0.14, 0.016, 0.016, m.metal, x, UP_Y0 + 0.07, UP_D + 0.012, {
+        box(0.14, 0.016, 0.016, m.brass, x, UP_Y0 + 0.07, UP_D + 0.012, {
           parent: rg,
           shadow: false,
         })
@@ -86,7 +91,7 @@ export function buildKitchen(layout, m) {
         parent: rg,
         shadow: false,
       })
-      const pl = new THREE.PointLight(0xffc98a, 0, 2.4, 1.8)
+      const pl = new THREE.PointLight(0xffd9b3, 0, 2.4, 1.8)
       pl.position.set(c, UP_Y0 - 0.1, UP_D + 0.25)
       rg.add(pl)
       ledLights.push(pl)
@@ -117,8 +122,9 @@ export function buildKitchen(layout, m) {
       parent,
       shadow: false,
     })
-    cyl(0.02, 0.3, m.metal, x - 0.22, TOP_Y + COUNTER_H + 0.15, z - 0.14, { parent })
-    cyl(0.016, 0.22, m.metal, x - 0.22, TOP_Y + COUNTER_H + 0.3, z - 0.03, {
+    /* grifería dorado cepillado */
+    cyl(0.02, 0.3, m.brass, x - 0.22, TOP_Y + COUNTER_H + 0.15, z - 0.14, { parent })
+    cyl(0.016, 0.22, m.brass, x - 0.22, TOP_Y + COUNTER_H + 0.3, z - 0.03, {
       parent,
       rx: Math.PI / 2,
     })
@@ -128,7 +134,7 @@ export function buildKitchen(layout, m) {
     const tg = new THREE.Group()
     box(0.68, 2.14, 0.66, m.cabinet, 0, 1.07, 0.33, { parent: tg })
     box(0.6, 1.86, 0.03, m.metal, 0, 1.12, 0.67, { parent: tg, shadow: false })
-    box(0.02, 0.7, 0.025, m.darkMetal, -0.12, 1.45, 0.69, { parent: tg, shadow: false })
+    box(0.02, 0.7, 0.025, m.brass, -0.12, 1.45, 0.69, { parent: tg, shadow: false })
     tg.position.set(x, 0, z)
     group.add(tg)
   }
@@ -163,6 +169,9 @@ export function buildKitchen(layout, m) {
 
   /* ---- Distribuciones ---- */
   const backFull = { stoveAt: 1.1, uppers: [{ from: -2.3, to: 0.55 }, { from: 1.65, to: 2.3 }] }
+  /* run lateral que llega hasta la esquina (z de -3.2 a 0.4) */
+  const sideRun = () =>
+    run(3.6, { sinkAt: 0.3, uppers: [{ from: -1.7, to: 1.7 }], drop: 0.002 })
 
   if (layout === 'linear') {
     place(run(4.6, { ...backFull, sinkAt: -1.2 }), -0.5, -WALL, 0)
@@ -174,22 +183,21 @@ export function buildKitchen(layout, m) {
   } else if (layout === 'l') {
     place(run(4.6, backFull), -0.5, -WALL, 0)
     tallUnit(2.35, -WALL)
-    place(
-      run(3.0, { sinkAt: 0, uppers: [{ from: -1.45, to: 1.45 }] }),
-      -WALL,
-      -1.05,
-      Math.PI / 2
-    )
+    place(sideRun(), -WALL, -1.4, Math.PI / 2)
   } else if (layout === 'u') {
-    place(run(4.6, backFull), -0.5, -WALL, 0)
+    /* frente trasero de pared a pared para que la U sea continua */
     place(
-      run(3.0, { sinkAt: 0, uppers: [{ from: -1.45, to: 1.45 }] }),
+      run(6.4, {
+        stoveAt: 0,
+        uppers: [{ from: -3.05, to: -0.6 }, { from: 0.6, to: 3.05 }],
+      }),
+      0,
       -WALL,
-      -1.05,
-      Math.PI / 2
+      0
     )
+    place(sideRun(), -WALL, -1.4, Math.PI / 2)
     /* península derecha, sin pared: sin backsplash ni altos */
-    place(run(3.0, { backsplash: false }), WALL, -1.05, -Math.PI / 2)
+    place(run(3.6, { backsplash: false, drop: 0.004 }), WALL, -1.4, -Math.PI / 2)
   }
 
   return {

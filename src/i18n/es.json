@@ -21,27 +21,33 @@
     },
     "cabinets": "Gabinetes",
     "cabinetColors": {
-      "cream": "Crema",
-      "taupe": "Taupe",
-      "sage": "Verde salvia",
-      "navy": "Azul noche",
-      "terracotta": "Terracota",
-      "graphite": "Grafito"
+      "beige": "Beige cálido",
+      "stone": "Piedra natural",
+      "sage": "Verde gris",
+      "moss": "Verde musgo",
+      "terracotta": "Terracota suave",
+      "charcoal": "Negro carbón",
+      "honeyOak": "Roble miel",
+      "walnut": "Nogal americano"
     },
     "finish": "Acabado",
     "finishes": { "matte": "Mate", "gloss": "Lacado" },
     "countertop": "Encimera",
     "countertops": {
-      "marble": "Mármol claro",
-      "granite": "Granito oscuro",
-      "walnut": "Nogal",
-      "concrete": "Concreto"
+      "quartzWhite": "Cuarzo blanco lechoso",
+      "cashmere": "Cuarzo cachemira",
+      "marble": "Mármol natural",
+      "graphite": "Cuarzo negro carbón",
+      "walnut": "Nogal recubierto",
+      "microcement": "Microcemento"
     },
     "floor": "Piso",
     "floors": {
-      "lightwood": "Madera clara",
+      "bleachedOak": "Roble blanqueado",
+      "honeyOak": "Roble miel",
       "walnut": "Nogal",
-      "concrete": "Concreto"
+      "travertine": "Travertino",
+      "microcement": "Microcemento"
     },
     "lighting": "Iluminación",
     "temperature": "Temperatura de luz",

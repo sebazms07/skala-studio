@@ -21,27 +21,33 @@
     },
     "cabinets": "Cabinets",
     "cabinetColors": {
-      "cream": "Cream",
-      "taupe": "Taupe",
-      "sage": "Sage green",
-      "navy": "Night blue",
-      "terracotta": "Terracotta",
-      "graphite": "Graphite"
+      "beige": "Warm beige",
+      "stone": "Natural stone",
+      "sage": "Grey green",
+      "moss": "Moss green",
+      "terracotta": "Soft terracotta",
+      "charcoal": "Charcoal",
+      "honeyOak": "Honey oak",
+      "walnut": "American walnut"
     },
     "finish": "Finish",
     "finishes": { "matte": "Matte", "gloss": "Gloss" },
     "countertop": "Countertop",
     "countertops": {
-      "marble": "Light marble",
-      "granite": "Dark granite",
-      "walnut": "Walnut",
-      "concrete": "Concrete"
+      "quartzWhite": "Milky white quartz",
+      "cashmere": "Cashmere quartz",
+      "marble": "Natural marble",
+      "graphite": "Charcoal quartz",
+      "walnut": "Sealed walnut",
+      "microcement": "Microcement"
     },
     "floor": "Floor",
     "floors": {
-      "lightwood": "Light wood",
+      "bleachedOak": "Bleached oak",
+      "honeyOak": "Honey oak",
       "walnut": "Walnut",
-      "concrete": "Concrete"
+      "travertine": "Travertine",
+      "microcement": "Microcement"
     },
     "lighting": "Lighting",
     "temperature": "Light temperature",

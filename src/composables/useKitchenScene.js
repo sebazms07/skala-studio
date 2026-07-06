@@ -5,8 +5,9 @@ import gsap from 'gsap'
 import { buildKitchen, WALL } from '../lib/kitchen/buildKitchen'
 import { createMaterials } from '../lib/kitchen/materials'
 
-const WARM = new THREE.Color('#ffd9ae')
-const COOL = new THREE.Color('#dfe9ff')
+/* 2700K → 6500K (tendencias iluminación 2026) */
+const WARM = new THREE.Color('#ffd9b3')
+const COOL = new THREE.Color('#e8f0ff')
 const BG_DAY = new THREE.Color('#efe8dd')
 const BG_NIGHT = new THREE.Color('#121009')
 
