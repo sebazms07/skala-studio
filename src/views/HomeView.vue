@@ -200,6 +200,13 @@ const services = ['interior', 'architecture', 'furniture']
   color: var(--color-primary-dark);
 }
 
+/* El ascendente cursivo de Playfair Display excede la caja de línea normal;
+   se agranda la máscara de reveal hacia arriba sin desplazar el layout. */
+.hero__line--italic :deep(.st__mask) {
+  padding-top: 0.22em;
+  margin-top: -0.22em;
+}
+
 .hero__subtitle {
   max-width: 34rem;
   margin-top: var(--space-3);
