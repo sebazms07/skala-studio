@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "studio": "Estudio",
+    "contact": "Contacto",
+    "cta": "Hablemos"
+  },
+  "hero": {
+    "kicker": "Estudio de Arquitectura & Diseño",
+    "title1": "Revolucionamos",
+    "title2": "la forma",
+    "title3": "de habitar",
+    "subtitle": "Diseño interior, arquitectura y mobiliario a medida. Creamos espacios que cuentan tu historia.",
+    "cta": "Ver proyectos",
+    "cta2": "Hablemos",
+    "scroll": "Desliza para explorar"
+  },
+  "home": {
+    "introLabel": "El estudio",
+    "introTitle": "Espacios pensados para vivirse",
+    "introText": "En Skala Studio unimos arquitectura, interiorismo y mobiliario a medida en un solo proceso. Cada proyecto nace de escuchar cómo vives, para diseñar espacios funcionales, cálidos y atemporales.",
+    "introLink": "Conoce el estudio",
+    "servicesLabel": "Qué hacemos",
+    "servicesTitle": "Tres disciplinas, una visión",
+    "featuredLabel": "Proyectos destacados",
+    "featuredTitle": "Trabajo reciente",
+    "featuredLink": "Todos los proyectos",
+    "ctaTitle": "¿Tienes un proyecto en mente?",
+    "ctaText": "Conversemos sobre cómo transformar tu espacio.",
+    "ctaButton": "Iniciar un proyecto",
+    "marquee": "Diseño interior · Arquitectura · Mobiliario a medida ·"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Acompañamos cada etapa del proyecto, del concepto a la entrega.",
+    "interior": {
+      "name": "Diseño Interior",
+      "desc": "Interiorismo integral para hogares y espacios comerciales: distribución, materialidad, iluminación y estilismo que reflejan tu identidad.",
+      "points": ["Concepto y moodboard", "Renders fotorrealistas", "Selección de materiales y mobiliario", "Dirección de obra interior"]
+    },
+    "architecture": {
+      "name": "Arquitectura",
+      "desc": "Proyectos arquitectónicos residenciales y comerciales, desde el anteproyecto hasta la supervisión de obra, con enfoque en luz, contexto y eficiencia.",
+      "points": ["Anteproyecto y diseño", "Documentación técnica", "Gestión de permisos", "Supervisión de obra"]
+    },
+    "furniture": {
+      "name": "Mobiliario a medida",
+      "desc": "Diseñamos y fabricamos piezas únicas que se adaptan milimétricamente a tu espacio: cocinas, closets, centros de entretenimiento y muebles especiales.",
+      "points": ["Diseño personalizado", "Maderas y acabados premium", "Fabricación propia", "Instalación profesional"]
+    },
+    "processLabel": "Cómo trabajamos",
+    "processTitle": "Nuestro proceso",
+    "process": [
+      { "name": "Escuchar", "desc": "Conocemos tu estilo de vida, necesidades y presupuesto en una primera reunión." },
+      { "name": "Conceptualizar", "desc": "Desarrollamos el concepto de diseño con planos, paletas y renders 3D." },
+      { "name": "Materializar", "desc": "Coordinamos obra, fabricación de mobiliario y proveedores con supervisión constante." },
+      { "name": "Entregar", "desc": "Instalamos, estilizamos y entregamos tu espacio listo para vivirse." }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una selección de espacios que hemos imaginado y construido.",
+    "all": "Todos",
+    "categories": {
+      "architecture": "Arquitectura",
+      "interior": "Interiores",
+      "commercial": "Comercial"
+    },
+    "view": "Ver proyecto",
+    "detail": {
+      "year": "Año",
+      "location": "Ubicación",
+      "category": "Categoría",
+      "area": "Área",
+      "next": "Siguiente proyecto",
+      "prev": "Proyecto anterior",
+      "back": "Volver a proyectos"
+    }
+  },
+  "studio": {
+    "title": "El estudio",
+    "heroText": "Somos un estudio de arquitectura y diseño que cree que los espacios transforman la vida de quienes los habitan.",
+    "philosophyLabel": "Filosofía",
+    "philosophyTitle": "Revolucionamos la forma de habitar",
+    "philosophyText": "Cada proyecto es una oportunidad de repensar cómo se vive un espacio. Diseñamos desde la empatía: observamos rutinas, luz, materiales y emociones para crear lugares honestos, funcionales y bellos que envejecen bien.",
+    "values": [
+      { "name": "Diseño con propósito", "desc": "Nada es decorativo por accidente: cada decisión responde a cómo vives." },
+      { "name": "Artesanía y precisión", "desc": "Del plano al milímetro del mueble, cuidamos cada detalle de la ejecución." },
+      { "name": "Materiales honestos", "desc": "Maderas, piedras y texturas naturales que aportan calidez y permanencia." },
+      { "name": "Cercanía", "desc": "Acompañamos y comunicamos cada etapa; tu proyecto también es nuestro." }
+    ],
+    "statsProjects": "Proyectos entregados",
+    "statsYears": "Años de experiencia",
+    "statsCities": "Ciudades"
+  },
+  "contact": {
+    "title": "Hablemos de tu proyecto",
+    "subtitle": "Cuéntanos qué imaginas y te responderemos en menos de 48 horas.",
+    "form": {
+      "name": "Nombre",
+      "namePh": "Tu nombre",
+      "email": "Correo electrónico",
+      "emailPh": "tu{'@'}correo.com",
+      "type": "Tipo de proyecto",
+      "typePh": "Selecciona una opción",
+      "types": ["Diseño interior", "Arquitectura", "Mobiliario a medida", "Proyecto integral"],
+      "message": "Mensaje",
+      "messagePh": "Cuéntanos sobre tu espacio, tiempos y presupuesto aproximado…",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando…",
+      "success": "¡Gracias! Tu mensaje fue enviado. Te contactaremos pronto.",
+      "required": "Este campo es obligatorio",
+      "emailInvalid": "Ingresa un correo válido"
+    },
+    "infoLabel": "Contacto",
+    "follow": "Síguenos",
+    "emailLabel": "Escríbenos",
+    "visitLabel": "Visítanos",
+    "address": "Av. Principal 123, Ciudad"
+  },
+  "footer": {
+    "tagline": "Revolucionamos la forma de habitar.",
+    "nav": "Navegación",
+    "social": "Social",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "loading": "Cargando"
+  }
+}

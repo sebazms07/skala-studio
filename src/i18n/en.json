@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "studio": "Studio",
+    "contact": "Contact",
+    "cta": "Let's talk"
+  },
+  "hero": {
+    "kicker": "Architecture & Design Studio",
+    "title1": "Reimagining",
+    "title2": "the way",
+    "title3": "we live",
+    "subtitle": "Interior design, architecture and custom furniture. We create spaces that tell your story.",
+    "cta": "View projects",
+    "cta2": "Let's talk",
+    "scroll": "Scroll to explore"
+  },
+  "home": {
+    "introLabel": "The studio",
+    "introTitle": "Spaces designed to be lived in",
+    "introText": "At Skala Studio we bring together architecture, interior design and custom furniture in a single process. Every project starts by listening to how you live, to design functional, warm and timeless spaces.",
+    "introLink": "Meet the studio",
+    "servicesLabel": "What we do",
+    "servicesTitle": "Three disciplines, one vision",
+    "featuredLabel": "Featured projects",
+    "featuredTitle": "Recent work",
+    "featuredLink": "All projects",
+    "ctaTitle": "Have a project in mind?",
+    "ctaText": "Let's talk about transforming your space.",
+    "ctaButton": "Start a project",
+    "marquee": "Interior design · Architecture · Custom furniture ·"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "We support every stage of the project, from concept to delivery.",
+    "interior": {
+      "name": "Interior Design",
+      "desc": "Full interior design for homes and commercial spaces: layout, materials, lighting and styling that reflect your identity.",
+      "points": ["Concept & moodboard", "Photorealistic renders", "Material & furniture selection", "Interior build supervision"]
+    },
+    "architecture": {
+      "name": "Architecture",
+      "desc": "Residential and commercial architectural projects, from schematic design to construction supervision, focused on light, context and efficiency.",
+      "points": ["Schematic design", "Technical documentation", "Permit management", "Construction supervision"]
+    },
+    "furniture": {
+      "name": "Custom Furniture",
+      "desc": "We design and build unique pieces tailored to the millimeter: kitchens, closets, media units and bespoke furniture.",
+      "points": ["Custom design", "Premium woods & finishes", "In-house fabrication", "Professional installation"]
+    },
+    "processLabel": "How we work",
+    "processTitle": "Our process",
+    "process": [
+      { "name": "Listen", "desc": "We learn about your lifestyle, needs and budget in a first meeting." },
+      { "name": "Conceptualize", "desc": "We develop the design concept with plans, palettes and 3D renders." },
+      { "name": "Build", "desc": "We coordinate construction, furniture fabrication and suppliers with constant supervision." },
+      { "name": "Deliver", "desc": "We install, style and hand over your space ready to be lived in." }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of spaces we have imagined and built.",
+    "all": "All",
+    "categories": {
+      "architecture": "Architecture",
+      "interior": "Interiors",
+      "commercial": "Commercial"
+    },
+    "view": "View project",
+    "detail": {
+      "year": "Year",
+      "location": "Location",
+      "category": "Category",
+      "area": "Area",
+      "next": "Next project",
+      "prev": "Previous project",
+      "back": "Back to projects"
+    }
+  },
+  "studio": {
+    "title": "The studio",
+    "heroText": "We are an architecture and design studio that believes spaces transform the lives of those who inhabit them.",
+    "philosophyLabel": "Philosophy",
+    "philosophyTitle": "Reimagining the way we live",
+    "philosophyText": "Every project is a chance to rethink how a space is lived in. We design with empathy: we observe routines, light, materials and emotions to create honest, functional and beautiful places that age well.",
+    "values": [
+      { "name": "Purposeful design", "desc": "Nothing is decorative by accident: every decision responds to how you live." },
+      { "name": "Craft & precision", "desc": "From the blueprint to the millimeter of each piece, we care for every detail." },
+      { "name": "Honest materials", "desc": "Natural woods, stones and textures that bring warmth and permanence." },
+      { "name": "Closeness", "desc": "We accompany and communicate every stage; your project is ours too." }
+    ],
+    "statsProjects": "Projects delivered",
+    "statsYears": "Years of experience",
+    "statsCities": "Cities"
+  },
+  "contact": {
+    "title": "Let's talk about your project",
+    "subtitle": "Tell us what you imagine and we'll reply within 48 hours.",
+    "form": {
+      "name": "Name",
+      "namePh": "Your name",
+      "email": "Email",
+      "emailPh": "you{'@'}email.com",
+      "type": "Project type",
+      "typePh": "Select an option",
+      "types": ["Interior design", "Architecture", "Custom furniture", "Full project"],
+      "message": "Message",
+      "messagePh": "Tell us about your space, timeline and approximate budget…",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Thank you! Your message was sent. We'll be in touch soon.",
+      "required": "This field is required",
+      "emailInvalid": "Enter a valid email"
+    },
+    "infoLabel": "Contact",
+    "follow": "Follow us",
+    "emailLabel": "Write to us",
+    "visitLabel": "Visit us",
+    "address": "Av. Principal 123, City"
+  },
+  "footer": {
+    "tagline": "Reimagining the way we live.",
+    "nav": "Navigation",
+    "social": "Social",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "loading": "Loading"
+  }
+}
