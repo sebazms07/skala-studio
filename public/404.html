@@ -7,8 +7,9 @@
   </head>
   <body>
     <script>
-      sessionStorage.redirect = location.href;
+      const path = location.pathname.replace('/skala-studio', '') || '/';
+      sessionStorage.redirect = path;
+      location.href = '/skala-studio/';
     </script>
-    <meta http-equiv="refresh" content="0;URL='/skala-studio/'" />
   </body>
 </html>

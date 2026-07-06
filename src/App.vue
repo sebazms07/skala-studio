@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import TheNavbar from './components/TheNavbar.vue'
@@ -9,6 +10,7 @@ import { initLenis, scrollToTop } from './composables/useLenis'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const router = useRouter()
 const curtain = ref(null)
 const reduced =
   typeof window !== 'undefined' &&
@@ -16,6 +18,12 @@ const reduced =
 
 onMounted(() => {
   initLenis()
+  // SPA redirect from 404.html: navigate to stored path
+  const redirect = sessionStorage.redirect
+  if (redirect) {
+    delete sessionStorage.redirect
+    router.replace(redirect)
+  }
 })
 
 function pageLeave(el, done) {
