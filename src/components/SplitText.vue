@@ -40,24 +40,23 @@ onMounted(() => {
       class="st__word"
       aria-hidden="true"
     >
-      <span v-for="(ch, ci) in word.split('')" :key="ci" class="st__mask">
-        <span class="st__char">{{ ch }}</span>
-      </span>
+      <span v-for="(ch, ci) in word.split('')" :key="ci" class="st__char">{{ ch }}</span>
       <span v-if="wi < text.split(' ').length - 1">&nbsp;</span>
     </span>
   </component>
 </template>
 
 <style scoped>
+/* Una sola máscara por palabra (no por letra): overflow:hidden con relleno
+   vertical generoso para no recortar ascendentes/descendentes de itálicas,
+   compensado con margen negativo para no alterar el line-height del layout. */
 .st__word {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.st__mask {
   display: inline-block;
   overflow: hidden;
   vertical-align: bottom;
+  white-space: nowrap;
+  padding-block: 0.35em;
+  margin-block: -0.35em;
 }
 
 .st__char {
