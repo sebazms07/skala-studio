@@ -188,6 +188,7 @@ const services = ['interior', 'architecture', 'furniture']
   font-size: var(--text-hero);
   font-weight: 500;
   letter-spacing: -0.01em;
+  line-height: 1.22;
 }
 
 .hero__line {
