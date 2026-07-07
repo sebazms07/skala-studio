@@ -289,8 +289,9 @@ const services = ['interior', 'architecture', 'furniture']
 }
 
 .service__desc {
-  font-size: var(--text-sm);
-  color: var(--color-on-dark-soft);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-on-dark);
   max-width: 40ch;
 }
 

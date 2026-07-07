@@ -91,8 +91,13 @@ const summary = computed(() =>
 }
 
 .viewer {
-  height: 58dvh;
-  min-height: 22rem;
+  /* En móvil el visor queda pineado arriba mientras el panel scrollea,
+     para no perder el feedback 3D en tiempo real al ajustar opciones. */
+  position: sticky;
+  top: 4.5rem;
+  z-index: 1;
+  height: 46dvh;
+  min-height: 18rem;
 }
 
 .controls {

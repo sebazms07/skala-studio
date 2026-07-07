@@ -102,7 +102,12 @@ onMounted(() => {
           </button>
         </div>
 
-        <RouterLink to="/contacto" class="btn btn--primary nav__cta">
+        <RouterLink
+          to="/contacto"
+          class="btn btn--primary nav__cta"
+          :class="{ 'is-current': route.path === '/contacto' }"
+          :aria-current="route.path === '/contacto' ? 'page' : undefined"
+        >
           {{ t('nav.cta') }}
         </RouterLink>
 
@@ -243,6 +248,12 @@ onMounted(() => {
   display: none;
   min-height: 2.6rem;
   padding-block: 0.6rem;
+}
+
+/* estado actual: estás en /contacto */
+.nav__cta.is-current {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
 }
 
 .nav__burger {
